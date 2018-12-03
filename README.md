@@ -22,7 +22,7 @@ docker-compose build
 docker-compose up
 ```
 
-Then you can just hit your localhost like [http://localhost:3000/].
+Then you can just hit your localhost like `http://localhost:3000/`.
 Do not forget to turn it off with `CRTL+C` when you done.
 
 ## Exercise I:
@@ -86,6 +86,8 @@ will be:
   }
 ]
 ```
+
+![Exercise I](./screenshots/ex01.png)
 
 ## Exercise II:
 The second exercise is a comparison between frames of pings. The script will read two files that contain the output of the `ping` command and it will generate a chart to compare which one has a better time response.
@@ -164,6 +166,8 @@ And the script will generate an output that looks like:
 ```
 This data structure will be used to generate a chart with D3JS.
 
+![Exercise II](./screenshots/ex02.png)
+
 ## Exercise III:
 For the thrid exercise was required to read a large file, process the data and generate an interactive `Scatter Plot` with some editable threshold that allow us to identify different sets of data in the chart.
 
@@ -175,4 +179,4 @@ Another issue is about the amount of dots to plot. SVG has a very low performanc
 
 That brings another problem to the surface, and it is `keeping the correspondency between the axes (added in the svg element) with the dots coords (plotted in the canvas element)`, nothing that cannot be solve using D3JS libs.
 
-
+![Exercise III](./screenshots/ex03.png)
