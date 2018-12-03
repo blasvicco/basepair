@@ -1,0 +1,24 @@
+a.card-header, a.card-header:hover, a.card-header:active, a.card-header:visited {
+  color: #212529;
+  text-decoration: none;
+}
+
+#ex-01-input {
+  height: 400px;
+}
+
+.oi-grey {
+  color: grey;
+}
+
+.js-collapser.collapsed > span.oi-caret-bottom {
+  transform: rotate(-180deg);
+  transform-origin: 50% 35%;
+  transition: transform .5s;
+}
+
+.js-collapser:not(.collapsed) > span.oi-caret-bottom {
+  transform: rotate(0deg);
+  transform-origin: 50% 35%;
+  transition: transform .5s;
+}

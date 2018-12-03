@@ -1,0 +1,4 @@
+.scatter-plot svg,
+.scatter-plot canvas {
+  position: absolute;
+}

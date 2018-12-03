@@ -1,0 +1,22 @@
+.stacked-bar-chart svg {
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
+}
+
+.stacked-bar-chart .d3-axis path,
+.stacked-bar-chart .d3-axis line {
+  fill: none;
+  stroke: #000;
+}
+
+.stacked-bar-chart .d3-y .tick line {
+  stroke: #ddd;
+}
+
+.stacked-bar-chart rect:nth-child(even) {
+   fill: #cce5ff;
+}
+
+.stacked-bar-chart rect:nth-child(odd) {
+  fill: #66b2ff;
+}
