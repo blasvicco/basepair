@@ -1,9 +1,9 @@
 $(document).ready(() => {
   $('#ex-01-input').text(
-    'stom-Wt80_S2_L001_R1_001.fastq.gz, stom-Wt80_S2_L002_R1_001.fastq.gz, stom-fb79_S1_L003_R2_001.fastq.gz, stom-fb78_S5_L001_R2_001.fastq.gz' +
-    'stom-Wt80_S2_L003_R1_001.fastq.gz stom-Wt80_S2_L001_R2_001.fastq.gz stom-fb78_S5_L001_R1_001.fastq.gz stom-fb78_S5_L002_R1_001.fastq.gz' +
-    'stom-fb78_S5_L003_R1_001.fastq.gz \n stom-Wt80_S2_L002_R2_001.fastq.gz \n stom-Wt80_S2_L003_R2_001.fastq.gz \n stom-fb79_S1_L001_R1_001.fastq.gz' +
-    'stom-fb79_S1_L002_R1_001.fastq.gz - stom-fb79_S1_L003_R1_001.fastq.gz - stom-fb79_S1_L001_R2_001.fastq.gz - stom-fb79_S1_L001_R2_001.fastq.gz' +
+    'stom-Wt80_S2_L001_R1_001.fastq.gz, stom-Wt80_S2_L002_R1_001.fastq.gz, stom-fb79_S1_L003_R2_001.fastq.gz, stom-fb78_S5_L001_R2_001.fastq.gz \n' +
+    'stom-Wt80_S2_L003_R1_001.fastq.gz stom-Wt80_S2_L001_R2_001.fastq.gz stom-fb78_S5_L001_R1_001.fastq.gz stom-fb78_S5_L002_R1_001.fastq.gz \n' +
+    'stom-fb78_S5_L003_R1_001.fastq.gz \n stom-Wt80_S2_L002_R2_001.fastq.gz \n stom-Wt80_S2_L003_R2_001.fastq.gz \n stom-fb79_S1_L001_R1_001.fastq.gz \n' +
+    'stom-fb79_S1_L002_R1_001.fastq.gz - stom-fb79_S1_L003_R1_001.fastq.gz - stom-fb79_S1_L001_R2_001.fastq.gz - stom-fb79_S1_L001_R2_001.fastq.gz \n' +
     'stom-fb78_S5_L002_R2_001.fastq.gz asd stom-fb78_S5_L003_R2_001.fastq.gz \n\n' +
     'Different kind of separators are being used in this example. You can just click in the submit button to see how it works.');
 
