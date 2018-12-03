@@ -1,0 +1,20 @@
+version: '3'
+services:
+  dev:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./tests/bin:/home/tests/bin
+      - ./tests/controllers:/home/tests/controllers
+      - ./tests/public/data:/home/tests/public/data
+      - ./tests/public/javascripts/general.js:/home/tests/public/javascripts/general.js
+      - ./tests/public/javascripts/scatterPlot.js:/home/tests/public/javascripts/scatterPlot.js
+      - ./tests/public/javascripts/stackedBarChart.js:/home/tests/public/javascripts/stackedBarChart.js
+      - ./tests/public/stylesheets/general.css:/home/tests/public/stylesheets/general.css
+      - ./tests/public/stylesheets/scatterPlot.css:/home/tests/public/stylesheets/scatterPlot.css
+      - ./tests/public/stylesheets/stackedBarChart.css:/home/tests/public/stylesheets/stackedBarChart.css
+      - ./tests/routes:/home/tests/routes
+      - ./tests/views:/home/tests/views
+    working_dir: /home/tests
+    command: ["/sbin/entrypoint.sh"]
