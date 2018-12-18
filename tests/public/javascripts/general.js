@@ -82,6 +82,7 @@ $(document).ready(() => {
       }, 2000);
     }
   };
+
   $('#ex-03-thld-pvalue').bind('keyup', () => {
     updateScatterPlot();
   });
