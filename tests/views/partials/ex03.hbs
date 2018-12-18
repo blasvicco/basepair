@@ -1,0 +1,40 @@
+<div class="row justify-content-md-center">
+  <section class="col col-10">
+    <div class="card">
+      <a href="#" class="card-header d-flex collapsed js-collapser" data-toggle="collapse" data-target="#ex-03-body" aria-expanded="false" aria-controls="ex-03-body">
+        <div class="align-self-center">Exercise 3</div>
+        <button class="btn align-self-center ml-auto collapsed js-collapser" type="button" data-toggle="collapse" data-target="#ex-03-body" aria-expanded="false" aria-controls="ex-03-body">
+          <span class="oi oi-caret-bottom oi-grey"></span>
+        </button>
+      </a>
+      <div class="card-body collapse" id="ex-03-body">
+        <h5>Scatter Plot:</h5>
+        <p>Log2FoldChange[X] / -Log10(pValue)[Y]</p>
+        <div class="scatter-plot">
+          <svg id="ex-03-svg-scatter-plot" class="d-none"></svg>
+          <canvas id="ex-03-svg-scatter-plot-canvas" class="d-none"></canvas>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <span>Threshold:</span>
+          </div>
+          <div class="col">
+            <label for="ex-03-thld-pvalue">pValue</label>
+            <input id="ex-03-thld-pvalue" class="form-control" value="2" />
+          </div>
+          <div class="col">
+            <label for="ex-03-thld-max-log2-fold-change">Max. log2FoldChange</label>
+            <input id="ex-03-thld-max-log2-fold-change" class="form-control" value="2" />
+          </div>
+          <div class="col">
+            <label for="ex-03-thld-min-log2-fold-change">Min. log2FoldChange</label>
+            <input id="ex-03-thld-min-log2-fold-change" class="form-control" value="-2" />
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" id="ex-03-submit">JS Run</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

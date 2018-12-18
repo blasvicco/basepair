@@ -3,12 +3,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-
+var hbs = require( 'express-handlebars' );
 var indexRouter = require('./routes/index');
 
 var app = express();
 
 app.set('view engine', 'hbs');
+// configure the view engine
+app.engine('hbs', hbs({
+  extname: 'hbs',
+  partialsDir: '/home/tests/views/partials/'
+}));
 
 app.use(logger('dev'));
 app.use(express.json());
