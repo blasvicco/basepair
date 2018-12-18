@@ -61,7 +61,7 @@ class ScatterPlot {
         .call(this.xAxis);
 
       // adding y axis
-      this.yAxis = d3.axisRight(this.y).ticks(12 * this.k);
+      this.yAxis = d3.axisRight(this.y).ticks(12);
       this.gy = this.svg.append('g')
         .attr('class', 'd3-axis d3-axis-y')
         .attr('transform', 'translate(0, 0)')
