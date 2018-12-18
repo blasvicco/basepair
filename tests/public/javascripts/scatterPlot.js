@@ -125,7 +125,7 @@ class ScatterPlot {
   */
   startInterval() {
     this.stop = false;
-    this.interval = d3.interval((elapsed) => {
+    this.interval = d3.interval(() => {
       // check stop call
       if (this.stop) this.interval.stop();
 
