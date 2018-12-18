@@ -5,12 +5,12 @@ var ex02 = require('../controllers/ex02');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 
 /* POST Ex-01 */
-router.post('/ex01', (req, res, next) => {
+router.post('/ex01', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(
     JSON.stringify(ex01(req.body.input))
@@ -18,7 +18,7 @@ router.post('/ex01', (req, res, next) => {
 });
 
 /* POST Ex-02 */
-router.post('/ex02', async (req, res, next) => {
+router.post('/ex02', async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(
     JSON.stringify(await ex02())
