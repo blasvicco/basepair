@@ -6,6 +6,7 @@ services:
       - "3000:3000"
     volumes:
       - ./tests/bin:/home/tests/bin
+      - ./tests/app.js:/home/tests/app.js
       - ./tests/controllers:/home/tests/controllers
       - ./tests/public/data:/home/tests/public/data
       - ./tests/public/javascripts/general.js:/home/tests/public/javascripts/general.js
