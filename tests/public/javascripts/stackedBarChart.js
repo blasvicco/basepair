@@ -33,16 +33,16 @@ class StackedBarChart {
       // format dataset as needed
       const dataset = this._format(input);
 
-      // retrieve the maxs values to set the domain in x axis
+      // calculate the maxs values to set the domain in x axis
       const maxs = this._getMaxValues(dataset);
 
-      // set x
+      // set y
       const y = d3.scaleBand()
         .paddingInner(0.2)
         .domain(Object.keys(dataset))
         .range([10, this.height - 10]);
 
-      // set y
+      // set x
       const x = d3.scaleLinear()
         .domain([0, Math.max(...maxs) + 10])
         .range([1, this.width]);
