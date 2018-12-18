@@ -110,8 +110,8 @@ class ScatterPlot {
         for (let points = this.pointsets[j], i = 0, n = points.length, p, px, py; i < n; ++i) {
           // calculate coords for the dot to match axis
           p = points[i], px = zx(p[0]), py = zy(p[1]);
-          context.moveTo(px + 2.5, py);
-          context.arc(px, py, 2.5, 0, 2 * Math.PI);
+          context.moveTo(px + 1, py);
+          context.arc(px, py, 1, 0, 2 * Math.PI);
         }
         context.fill();
       }
